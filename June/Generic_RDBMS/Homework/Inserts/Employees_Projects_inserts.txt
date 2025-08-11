@@ -1,0 +1,7 @@
+INSERT ALL
+ INTO Employees_Projects (employee_project_id, project_id, employee_id) VALUES ('EP100001', 'PRJ001', 100);
+ INTO Employees_Projects (employee_project_id, project_id, employee_id) VALUES ('EP103004', 'PRJ004', 103);
+ INTO Employees_Projects (employee_project_id, project_id, employee_id) VALUES ('EP103005', 'PRJ004', 103);
+ INTO Employees_Projects (employee_project_id, project_id, employee_id) VALUES ('EP124005', 'PRJ005', 124);
+ INTO Employees_Projects (employee_project_id, project_id, employee_id) VALUES ('EP127008', 'PRJ008', 127);
+SELECT * FROM dual;

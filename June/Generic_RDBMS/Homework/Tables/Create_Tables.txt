@@ -1,0 +1,120 @@
+-- 1. -------------- Tables without FK --------------
+
+-- JOBS: lookup of job titles eg: IT, HR etc
+CREATE TABLE Jobs (
+  job_id    VARCHAR2(10)   PRIMARY KEY,
+  name      VARCHAR2(35)   NOT NULL
+) TABLESPACE davax_data;
+
+-- DEPARTMENTS: lookup of organizational units
+CREATE TABLE Departments (
+  department_id  NUMBER(6,0)   PRIMARY KEY,
+  name           VARCHAR2(30)  NOT NULL
+) TABLESPACE davax_data;
+
+-- PROGRAM: lookup of employment programs
+CREATE TABLE Programs (
+  program_id    VARCHAR2(10)   PRIMARY KEY,
+  name          VARCHAR2(20)   NOT NULL,
+  daily_hours   NUMBER(1,0)    NOT NULL
+) TABLESPACE davax_data;
+
+-- COUNTRY: list of countries
+CREATE TABLE Countries (
+  country_id  CHAR(2)         PRIMARY KEY,
+  name        VARCHAR2(60)    NOT NULL
+) TABLESPACE davax_data;
+
+CREATE TABLE Projects (
+  project_id   VARCHAR2(15)   PRIMARY KEY,
+  name         VARCHAR2(50)   NOT NULL,
+  activ        CHAR(1)        DEFAULT 'Y'
+                  CHECK (activ IN ('Y','N')),
+  details      CLOB           -- can store JSON
+) TABLESPACE davax_data;
+
+ALTER TABLE Projects
+ADD CONSTRAINT chk_details_is_json
+CHECK (details IS JSON);
+
+
+CREATE TABLE Time_Types (
+  time_type_id  VARCHAR2(10)   PRIMARY KEY,
+  name          VARCHAR2(30)   NOT NULL
+) TABLESPACE davax_data;
+
+
+-- 2. -------------- Tables with FK --------------
+
+-- OFFICES: each office belongs to a country
+CREATE TABLE Offices (
+  office_id       VARCHAR2(10)   PRIMARY KEY,
+  country_id      CHAR(2)        NOT NULL,
+  city_name       VARCHAR2(30)   NOT NULL,
+  postal_code     VARCHAR2(13)   NOT NULL,
+  street_address  VARCHAR2(40)   NOT NULL,
+  CONSTRAINT fk_offices_country FOREIGN KEY(country_id)
+    REFERENCES Countries(country_id)
+) TABLESPACE davax_data;
+
+-- EMPLOYMENT: employment types linked to program
+CREATE TABLE Employments (
+  employment_id  VARCHAR2(10)   PRIMARY KEY,
+  name           VARCHAR2(30)   NOT NULL,
+  program_id     VARCHAR2(10)   NOT NULL,
+  CONSTRAINT fk_employment_program FOREIGN KEY(program_id)
+    REFERENCES Programs(program_id)
+) TABLESPACE davax_data;
+
+
+-- 3. -------------- Core entity: EMPLOYEES --------------
+
+CREATE TABLE Employees (
+  employee_id     NUMBER(6)       PRIMARY KEY,
+  first_name      VARCHAR2(20)    NOT NULL,
+  last_name       VARCHAR2(20)    NOT NULL,
+  email           VARCHAR2(30)    NOT NULL,
+  phone_number    VARCHAR2(20),
+  hire_date       DATE            NOT NULL,
+  job_id          VARCHAR2(10)    NOT NULL,
+  department_id   NUMBER(6)       NOT NULL,
+  employment_id   VARCHAR2(10)    NOT NULL,
+  office_id       VARCHAR2(10)    NOT NULL,
+  CONSTRAINT uq_employees_email UNIQUE(email),
+  CONSTRAINT fk_employees_job     FOREIGN KEY(job_id)
+    REFERENCES Jobs(job_id),
+  CONSTRAINT fk_employees_dept    FOREIGN KEY(department_id)
+    REFERENCES Departments(department_id),
+  CONSTRAINT fk_employees_empmt   FOREIGN KEY(employment_id)
+    REFERENCES Employments(employment_id),
+  CONSTRAINT fk_employees_office  FOREIGN KEY(office_id)
+    REFERENCES Offices(office_id)
+) TABLESPACE davax_data;
+
+-- 4. -------------- Join table --------------
+
+CREATE TABLE Employees_Projects (
+  employee_project_id  VARCHAR2(22)   PRIMARY KEY,
+  project_id           VARCHAR2(15)   NOT NULL,
+  employee_id          NUMBER(6)      NOT NULL,
+  CONSTRAINT fk_ep_proj      FOREIGN KEY(project_id)
+    REFERENCES Projects(project_id),
+  CONSTRAINT fk_ep_employee  FOREIGN KEY(employee_id)
+    REFERENCES Employees(employee_id)
+) TABLESPACE davax_data;
+
+
+
+-- 5. -------------- TIMESHEET fact table --------------
+
+CREATE TABLE Timesheets (
+  timesheet_id         NUMBER(20)     PRIMARY KEY,
+  employee_project_id  VARCHAR2(22)   NOT NULL,
+  time_type_id         VARCHAR2(10)   NOT NULL,
+  day_of_work          DATE           NOT NULL,
+  hours_per_day        NUMBER(1,0),
+  CONSTRAINT fk_ts_ep      FOREIGN KEY(employee_project_id)
+    REFERENCES Employees_Projects(employee_project_id),
+  CONSTRAINT fk_ts_tt      FOREIGN KEY(time_type_id)
+    REFERENCES Time_Types(time_type_id)
+) TABLESPACE davax_data;

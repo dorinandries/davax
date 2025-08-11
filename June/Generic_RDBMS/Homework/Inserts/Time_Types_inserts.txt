@@ -1,0 +1,5 @@
+INSERT ALL
+  INTO Time_Types (time_type_id, name) VALUES ('REG', 'Regular')
+  INTO Time_Types (time_type_id, name) VALUES ('OVT', 'Overtime')
+  INTO Time_Types (time_type_id, name) VALUES ('TRV', 'Travel')
+SELECT * FROM dual;

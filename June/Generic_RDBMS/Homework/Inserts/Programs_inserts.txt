@@ -1,0 +1,7 @@
+INSERT ALL
+  INTO Programs (program_id, name, daily_hours) VALUES ('FT001','Full-time 8 hours', 8)
+  INTO Programs (program_id, name, daily_hours) VALUES ('FT002','Full-time 7 hours', 7)
+  INTO Programs (program_id, name, daily_hours) VALUES ('PT001','Part-time 6 hours', 6)
+  INTO Programs (program_id, name, daily_hours) VALUES ('PT002','Part-time 4 hours', 4)
+  INTO Programs (program_id, name, daily_hours) VALUES ('INT999','Internship full-time', 8)
+  SELECT * FROM dual;

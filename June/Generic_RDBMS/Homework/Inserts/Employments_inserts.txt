@@ -1,0 +1,11 @@
+INSERT ALL
+  INTO Employments (employment_id, name, program_id) VALUES ('WK08HOME','Work from home 8h/day','FT001')
+  INTO Employments (employment_id, name, program_id) VALUES ('WK07HOME','Work from home 7h/day','FT002')
+  INTO Employments (employment_id, name, program_id) VALUES ('WK06HOME','Work from home 6h/day','PT001')
+  INTO Employments (employment_id, name, program_id) VALUES ('WK04HOME','Work from home 4h/day','PT002')
+  INTO Employments (employment_id, name, program_id) VALUES ('WK08OFFICE','Work from office 8h/day','FT001')
+  INTO Employments (employment_id, name, program_id) VALUES ('WK07OFFICE','Work from office 7h/day','FT001')
+  INTO Employments (employment_id, name, program_id) VALUES ('WK06OFFICE','Work from office 6h/day','PT001')
+  INTO Employments (employment_id, name, program_id) VALUES ('WK04OFFICE','Work from office 4h/day','PT002')
+  INTO Employments (employment_id, name, program_id) VALUES ('WK01INTERN','Work from office 8h/day','INT999')
+SELECT * FROM dual;

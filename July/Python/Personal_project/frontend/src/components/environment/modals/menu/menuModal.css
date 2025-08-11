@@ -1,0 +1,49 @@
+.menu-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.menu-modal {
+    background: white;
+    padding: 2rem;
+    top: 6%;
+    right: 3%;
+    border-radius: 10px;
+    width: 300px;
+    max-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+}
+
+.menu-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.logout-section {
+    margin-top: auto;
+    padding-top: 2rem;
+    border-top: 1px solid #ccc;
+}
+
+.logout-button {
+    width: 100%;
+    background: #e53935;
+    color: white;
+    border: none;
+    padding: 0.6rem;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}

@@ -1,0 +1,30 @@
+INSERT ALL
+  INTO Offices (office_id, country_id, city_name, postal_code, street_address) VALUES ('OF01RO','RO','Suceava','23365','Str. Universitatii 12')
+  INTO Offices (office_id, country_id, city_name, postal_code, street_address) VALUES ('OF02RO','RO','Iasi','7721','Strada Palat 3e')
+  INTO Offices (office_id, country_id, city_name, postal_code, street_address) VALUES ('OF03RO','RO','Cluj-Napoca','400123','Calea Dorobanților 100')
+
+  INTO Offices (office_id, country_id, city_name, postal_code, street_address) VALUES ('OF01AT','AT','Vienna','1200','Millennium Tower 94-96')
+  INTO Offices (office_id, country_id, city_name, postal_code, street_address) VALUES ('OF02AT','AT','Salzburg','5020','Getreidegasse 9')
+
+  INTO Offices (office_id, country_id, city_name, postal_code, street_address) VALUES ('OF01DE','DE','Berlin','10115','Friedrichstr. 68')
+  INTO Offices (office_id, country_id, city_name, postal_code, street_address) VALUES ('OF02DE','DE','Munich','80331','Sendlinger Str. 12')
+  INTO Offices (office_id, country_id, city_name, postal_code, street_address) VALUES ('OF03DE','DE','Hamburg','20095','Spitalerstraße 22')
+
+  INTO Offices (office_id, country_id, city_name, postal_code, street_address) VALUES ('OF01FR','FR','Paris','75008','Champs-Élysées 32')
+  INTO Offices (office_id, country_id, city_name, postal_code, street_address) VALUES ('OF02FR','FR','Lyon','69002','Rue de la République 10')
+
+  INTO Offices (office_id, country_id, city_name, postal_code, street_address) VALUES ('OF01IT','IT','Rome','00184','Via Nazionale 45')
+  INTO Offices (office_id, country_id, city_name, postal_code, street_address) VALUES ('OF02IT','IT','Milan','20121','Via Monte Napoleone 2')
+
+  INTO Offices (office_id, country_id, city_name, postal_code, street_address) VALUES ('OF01BG','BG','Sofia','1000','Boulevard Vitosha 15')
+
+  INTO Offices (office_id, country_id, city_name, postal_code, street_address) VALUES ('OF01PL','PL','Warsaw','00-001','Marszałkowska 55/73')
+
+  INTO Offices (office_id, country_id, city_name, postal_code, street_address) VALUES ('OF01NL','NL','Amsterdam','1012','Damrak 70')
+
+  INTO Offices (office_id, country_id, city_name, postal_code, street_address) VALUES ('OF01ES','ES','Barcelona','08001','La Rambla 120')
+  INTO Offices (office_id, country_id, city_name, postal_code, street_address) VALUES ('OF02ES','ES','Madrid','28013','Gran Vía 45')
+
+  INTO Offices (office_id, country_id, city_name, postal_code, street_address) VALUES ('OF01GB','GB','London','SW1A 1AA','10 Downing Street')
+
+SELECT * FROM dual;

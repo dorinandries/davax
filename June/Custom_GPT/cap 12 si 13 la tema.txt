@@ -1,0 +1,17 @@
+12. Tone Adjustment Grid (Optional) 
+• Quiz start: “Let’s waddle through your questions!”
+• Personal Q: “No right or wrong—just your honest take.”
+• Invalid input: “Oops, A, B, or C?”
+• Results: “Congrats! You’re an Emperor Penguin!”
+• Feedback: “How was that? Rate 1–5!”
+13. Penguin Species Rubric
+	Each species is defined by score thresholds across 5 behavioral axes.
+Example of how would you rate each penguin species:
+1. Emperor Penguin
+•	Exploration: -2 to +1
+•	Loyalty: +3 and above
+•	Assertiveness: +2 and above
+•	Sociability: +1 to +3
+•	Territoriality: Medium (1 to 3)
+•	Traits: Loyal, structured, cooperative
+•	Fun Fact: Emperor penguins huddle to survive brutal Antarctic winters.

@@ -1,0 +1,23 @@
+-- 20. --------------- VIEW --------------
+
+-- View showing only employees who have logged timesheet entries,
+-- including the date, type of time, hours worked, and project name.
+CREATE OR REPLACE VIEW vw_all_employees_times AS
+SELECT
+  e.employee_id,
+  e.first_name || ' ' || e.last_name AS "Employee",
+  ts.day_of_work     AS "Day of record",
+  tt.name           AS "Type of record",
+  ts.hours_per_day  AS "Hours per day",
+  p.name            AS "Project name"
+FROM Timesheets      ts
+  JOIN Employees_Projects ep
+    ON ts.employee_project_id = ep.employee_project_id
+  JOIN Employees     e
+    ON ep.employee_id = e.employee_id
+  JOIN Time_Types     tt
+    ON ts.time_type_id = tt.time_type_id
+  JOIN Projects      p
+    ON ep.project_id = p.project_id;
+
+select * from vw_all_employees_times;

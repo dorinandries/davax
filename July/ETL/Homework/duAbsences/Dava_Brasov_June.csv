@@ -1,0 +1,40 @@
+Employee absence schedule,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+June,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Brasov,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Absence type key,V,Vacation,,,P,Personal,,,S,Sick,,E,Examen/Colocviu,,,L/D,Licenta/Disertatie,,,,,,,L/S,Laborator/Seminar,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,Dates of absence,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,2025
+,Sun,Mon,Tue,Wed,Thu,Fri,Sat,Sun,Mon,Tue,Wed,Thu,Fri,Sat,Sun,Mon,Tue,Wed,Thu,Fri,Sat,Sun,Mon,Tue,Wed,Thu,Fri,Sat,Sun,Mon,,
+Employee name,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30, ,Total days
+Valentin Alexe,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0
+Andrei Apostol,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0
+Ionut Birsan,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0
+Cosmin-Nicusor Brumariu,,,,,,,,,,E,E,E,,,,,,,,,,,,,,,,,,,,3
+Mirela-Magdalena Catrina,,,,,,,,,,,,E,E,,,,E,E,E,,,,,,,,,,,,,5
+Alexandru Chelaru,,,,,,,,,,,,,,,,E,,,,,,,L/D,,,,L/D,,,,,3
+Virgil Cimpean,,E,,,,,,,,,,,,,,P,,,,,,,,,L/D,,,,,L/D,,4
+Alexandru Cinipa,,,,,,,,,,,,,,,,,,,,,,,,,,,,E,,,,1
+Celia Ciurchil-Giurgiu,,,,,,,,,,P,,,,,,,,,,L/D,,,,,L/D,L/D,L/D,,,,,5
+Robert Cristian,,,E,E,E,E,,,,P,E,,E,,,,,,,L/D,,,,,,,,,,,,8
+Alexandru Duta,,E,,,,E,P,,,,E,,,,,,,E,,,,,,E,,,,,,,,6
+Alexandru Edves,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0
+Alin Constantin Florescu,,,,,,,,,,,,,,,,L/D,,,,,,,,,L/D,,,,,L/D,,3
+Maria-Ioana Fuerea,,E,,,E,,,,E,,,E,,,,,,E,,,,,,,E,,E,,,,,7
+Bogdan Gargu,,,,,P,,,,,,,,,,,,,,,,,,,,,,,,,,,1
+Denis Ivan,,,E,,,,,,,,,,,,,,,,,,,,,,L/D,,,,,,,2
+Darius Margarit,,,,,,,,,,P,,,,,,,,,,L/D,,,,,,,,,,,,2
+Sorin Cristian Miron,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0
+George Andrei Necula,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0
+Andreea-Raluca Neagu,,,,,E,,,,,,E,,,,,E,,,,,,,E,,,,,,,,,4
+Razvan Niculae,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0
+Florin Nita,,,,E,,,,,,,,,,,,,,,,,,,,,,,,E,,,,2
+Bogdan Patrania,,,,,,,,,,,,,,,,,,,L/D,,,,,,,,,,,,,1
+George Patrasc,,,,,E,,,,,E,,,E,,,E,,,E,,,,,,,,,,,,,5
+Alexandru Pestritu,,,,,,,,,,P,,,,,,,,,,L/D,,,,L/D,L/D,,,,,,,4
+Sebastian Popa,,,,,,,,,,,,E,E,,,,E,,E,,,,,,,,,,,,,4
+Madalina Puia,,,,,,,,,,,,,,,,,,,E,L/D,,,,,,,,,,,,2
+Vlad-Stefan Sas,,,E,,,,,,,P,,,,,,,,,,L/D,,,,,L/D,,,,,,,4
+Robert-Cosmin Tudorache,,,,,,,,,,,,,,,,,,,,,,,,,,,P,,,,,1
+Costina Vanghele,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,0
+Constantin Voicu,,,,,,,,,,P,,,,,,,,,,L/D,,,,,,,,,,,,2
+Absence type key Total,,3,3,2,5,2,1,,1,8,4,4,4,,,5,2,3,5,7,,,2,2,7,1,4,2,,,,79

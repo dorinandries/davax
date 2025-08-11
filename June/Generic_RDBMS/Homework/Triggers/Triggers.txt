@@ -1,0 +1,141 @@
+-- 18. -------------- Triggers -------------------
+
+-- Trigger to check a date to be only between today and the past 7 days
+
+CREATE OR REPLACE TRIGGER trg_check_data_timesheet
+  BEFORE INSERT OR UPDATE ON Timesheets
+  FOR EACH ROW
+BEGIN
+  IF :NEW.day_of_work < TRUNC(SYSDATE) - 7
+     OR :NEW.day_of_work > TRUNC(SYSDATE) THEN
+    RAISE_APPLICATION_ERROR(
+      -20001,
+      'The day of work must be between today and the past 7 days'
+    );
+  END IF;
+END;
+/
+
+
+
+
+-- Test the trigger for insert in timesheet in the future. Today is 11 june so the query is for 12 june
+-- insert INTO Timesheets (timesheet_id, employee_project_id, time_type_id, day_of_work, hours_per_day) VALUES (990, 'EP103005', 'OVT', DATE '2025-06-12', 7);
+
+
+
+/* This trigger will be actioned in the next cases:
+Case 1. An user with a specific type of employment can only have the same amount of hours added as <regular> in timesheet per day. 
+    eg: If user with employee_id=100 have a full-time 8 hours employment, his record in timesheet as a <regular> record must be <= 8. 
+Trigger is actioned if hours_per_day > 8. Same for the employment of 7,6,4 hours / day
+
+Case 2. Ensure an employee’s total regular hours per day do not exceed their allowed daily hours, even when split across multiple projects.
+ (E.g. One employee ( with full-time 8 hours ) could log 4 h on PRJ001 and 4 h on PRJ005 -> total 8 regular hours ... but not 5 h + 4 h.)
+ 
+Case 3. Any overtime record can't be more than 6 hours per day.
+*/
+
+CREATE OR REPLACE TRIGGER trg_timesheet_hour_limits
+BEFORE INSERT OR UPDATE ON Timesheets
+FOR EACH ROW
+DECLARE
+  v_emp_id        Employees.employee_id%TYPE;
+  v_daily_hours   Programs.daily_hours%TYPE;
+  v_existing_reg  NUMBER;
+BEGIN
+  IF :NEW.time_type_id = 'REG' THEN
+    -- find the employee for this employee_project_id
+    SELECT ep.employee_id
+      INTO v_emp_id
+      FROM Employees_Projects ep
+     WHERE ep.employee_project_id = :NEW.employee_project_id;
+
+    -- look up that employee's daily_hours via Employments→Programs
+    SELECT p.daily_hours
+      INTO v_daily_hours
+      FROM Programs p
+      JOIN Employments e ON e.program_id = p.program_id
+      JOIN Employees emp ON emp.employment_id = e.employment_id
+     WHERE emp.employee_id = v_emp_id;
+
+    -- Requirement 1: per-row check that a single REG entry’s hours ≤ daily_hours
+    IF :NEW.hours_per_day > v_daily_hours THEN
+      RAISE_APPLICATION_ERROR(
+        -20001,
+        'Inserted regular hours (' || :NEW.hours_per_day ||
+        ') exceed daily limit of ' || v_daily_hours || ' hours of employment contract.'
+      );
+    END IF;
+    
+    /*
+    IF :NEW.hours_per_day = v_daily_hours THEN
+      RAISE_APPLICATION_ERROR(
+        -20001,
+        'This user is recorded with ' || :NEW.hours_per_day ||
+        ' regular hours on ' || :NEW.day_of_work
+      );
+    END IF;*/
+
+    -- compute sum of existing REGular hours for that employee on this new date
+    SELECT NVL(SUM(ts.hours_per_day),0)
+      INTO v_existing_reg
+      FROM Timesheets ts
+      JOIN Employees_Projects ep2
+        ON ts.employee_project_id = ep2.employee_project_id
+     WHERE ep2.employee_id   = v_emp_id
+       AND ts.time_type_id   = 'REG'
+       AND ts.day_of_work    = :NEW.day_of_work;
+
+    -- Requirement 2: cumulative check that (existing + new) REG hours ≤ inserted daily_hours
+    IF v_existing_reg - :NEW.hours_per_day > 0
+       AND v_existing_reg + :NEW.hours_per_day > v_daily_hours
+    THEN
+      RAISE_APPLICATION_ERROR(
+        -20002,
+        'This user is already recorded with ' || v_existing_reg ||
+        ' regular hours on ' || TO_CHAR(:NEW.day_of_work,'YYYY-MM-DD') ||
+        ', so you cannot add your new ' || :NEW.hours_per_day || ' hours.'
+      );
+    END IF;
+
+  ELSIF :NEW.time_type_id = 'OVT' THEN
+    -- Requirement 3: OVT entries cannot exceed 6 hours per day
+    IF :NEW.hours_per_day > 6 THEN
+      RAISE_APPLICATION_ERROR(
+        -20003,
+        'No more than 6 hours overtime per day'
+      );
+    END IF;
+  END IF;
+END;
+/
+
+
+
+
+-- 19. --------------- TESTING THE TRIGGER --------------
+/* Use case 1
+-- this insert have more hours than user employment allow as regular hours
+
+insert  INTO Timesheets (timesheet_id, employee_project_id, time_type_id, day_of_work, hours_per_day) VALUES (992, 'EP100001', 'REG', DATE '2025-06-11', 9);
+
+*/
+
+
+/* Use case 1+2
+
+-- this insert will be recorded with success
+
+insert INTO Timesheets (timesheet_id, employee_project_id, time_type_id, day_of_work, hours_per_day) VALUES (993, 'EP103004', 'REG', DATE '2025-06-10', 4);
+commit;
+
+-- this record will trigger because hours_per_day form insert + the 4 hours of previous insert ( both at 10 june 2025 ) are grater than employee's employment hours
+
+insert INTO Timesheets (timesheet_id, employee_project_id, time_type_id, day_of_work, hours_per_day) VALUES (994, 'EP103005', 'REG', DATE '2025-06-10', 7);
+*/
+
+/* Use case 3
+
+insert INTO Timesheets (timesheet_id, employee_project_id, time_type_id, day_of_work, hours_per_day) VALUES (995, 'EP103005', 'OVT', DATE '2025-06-11', 7);
+*/
+ 

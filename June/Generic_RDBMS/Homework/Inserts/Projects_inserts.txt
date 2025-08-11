@@ -1,0 +1,69 @@
+INSERT ALL
+INTO Projects (project_id, name, activ, details) VALUES (
+  'PRJ001',
+  'Employee Onboarding System',
+  'Y',
+  '{"owner": "HR", "start_date": "2025-01-10", "budget": 120000}'
+)
+
+INTO Projects (project_id, name, activ, details) VALUES (
+  'PRJ002',
+  'Employee Onboarding System',
+  'N',
+  '{"owner": "HR", "start_date": "2024-01-21", "budget": 50000}'
+)
+
+INTO Projects (project_id, name, activ) VALUES (
+  'PRJ003',
+  'Legacy System Migration',
+  'N'
+)
+
+INTO Projects (project_id, name, activ) VALUES (
+  'PRJ004',
+  'AI Chatbot Initiative',
+  'Y'
+)
+
+INTO Projects (project_id, name, activ, details) VALUES (
+  'PRJ005',
+  'Mobile Banking Platform',
+  'Y',
+  '{"department": "Finance", "features": ["2FA", "mobile deposit"], "release": "Q2 2025"}'
+)
+
+INTO Projects (project_id, name, activ, details) VALUES (
+  'PRJ006',
+  'Customer Feedback Analyzer',
+  'Y',
+  '{"owner": "CX", "tools": ["NLP", "Sentiment"], "active": true}'
+)
+
+INTO Projects (project_id, name, activ, details) VALUES (
+  'PRJ007',
+  'Corporate Intranet Revamp',
+  'N',
+  NULL
+)
+
+INTO Projects (project_id, name, activ, details) VALUES (
+  'PRJ008',
+  'Remote Work Policy Tracker',
+  'Y',
+  '{"updated": "2025-05-01", "countries_supported": 12, "version": "2.0"}'
+)
+
+INTO Projects (project_id, name, activ, details) VALUES (
+  'PRJ009',
+  'Code Refactoring Campaign',
+  'N',
+  NULL
+)
+
+INTO Projects (project_id, name, activ, details) VALUES (
+  'PRJ010',
+  'AI Research Sandbox',
+  'Y',
+  '{"type": "experimental", "datasets": ["ImageNet", "COCO"], "budget": 50000}'
+)
+SELECT * FROM dual;

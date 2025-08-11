@@ -1,0 +1,47 @@
+
+-- 21. --------------- Materialized View --------------
+
+/*
+This materialized view stores the total timesheet hours each employee has logged on a selected project.
+*/
+
+-- Drop the materialized view if neccesarly
+-- DROP MATERIALIZED VIEW mv_project_hours;
+
+-- 2) Recreate it properly
+CREATE MATERIALIZED VIEW mv_project_hours
+  BUILD IMMEDIATE
+  REFRESH COMPLETE
+  ON DEMAND
+AS
+SELECT
+  ep.employee_id                           AS employee_id,
+  e.first_name || ' ' || e.last_name       AS full_name,
+  ep.project_id                            AS project_id,
+  p.name                                    AS project_name,
+  SUM(t.hours_per_day)                      AS total_hours
+FROM Timesheets t
+JOIN Employees_Projects ep
+  ON t.employee_project_id = ep.employee_project_id
+JOIN Employees e
+  ON ep.employee_id = e.employee_id
+JOIN Projects p
+  ON ep.project_id = p.project_id
+GROUP BY
+  ep.employee_id,
+  e.first_name,
+  e.last_name,
+  ep.project_id,
+  p.name;
+
+
+-- exemple 1: 
+SELECT *
+  FROM mv_project_hours
+ WHERE Project_ID = 'PRJ001';
+ 
+ -- example 2
+SELECT *
+  FROM mv_project_hours
+ WHERE Project_ID = 'PRJ004';
+

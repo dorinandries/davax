@@ -1,0 +1,12 @@
+INSERT ALL
+  INTO Employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, department_id, employment_id, office_id) VALUES ('100', 'Steven', 'King', 'SKING', '1.515.555.0100', '17-JUN-13', 'AD_PRES', '10', 'WK08HOME', 'OF01RO')
+  INTO Employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, department_id, employment_id, office_id) VALUES ('101', 'Neena', 'Yang', 'NYANG', '1.515.555.0101', '21-SEP-15', 'AD_VP', '20', 'WK07HOME', 'OF02RO')
+  INTO Employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, department_id, employment_id, office_id) VALUES ('102', 'Lex', 'Garcia', 'LGARCIA', '1.515.555.0102', '13-JAN-11', 'AD_ASST', '30', 'WK06HOME', 'OF03RO')
+  INTO Employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, department_id, employment_id, office_id) VALUES ('103', 'Alexander', 'James', 'AJAMES', '1.590.555.0103', '03-JAN-16', 'FI_MGR', '40', 'WK04HOME', 'OF01AT')
+  
+  INTO Employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, department_id, employment_id, office_id) VALUES ('105', 'David', 'Williams', 'DWILLIAMS', '1.590.555.0105', '25-JUN-15', 'AC_MGR', '60', 'WK07OFFICE', 'OF01DE')
+  INTO Employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, department_id, employment_id, office_id) VALUES ('106', 'Valli', 'Jackson', 'VJACKSON', '1.590.555.0106', '05-FEB-16', 'AC_ACCOUNT', '70', 'WK06OFFICE', 'OF02DE')
+  INTO Employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, department_id, employment_id, office_id) VALUES ('107', 'Diana', 'Nguyen', 'DNGUYEN', '1.590.555.0107', '07-FEB-17', 'SA_MAN', '80', 'WK04OFFICE', 'OF03DE')
+  INTO Employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, department_id, employment_id, office_id) VALUES ('124', 'Kevin', 'Mourgos', 'KMOURGOS', '1.650.555.0124', '16-NOV-17', 'AC_MGR', '250', 'WK06OFFICE', 'OF02DE')
+  INTO Employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, department_id, employment_id, office_id) VALUES ('127', 'James', 'Landry', 'JLANDRY', '1.650.555.0127', '14-JAN-17', 'SA_REP', '20', 'WK08HOME', 'OF02FR')
+SELECT * FROM dual;

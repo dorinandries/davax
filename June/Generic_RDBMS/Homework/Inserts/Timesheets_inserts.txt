@@ -1,0 +1,27 @@
+INSERT ALL
+ INTO Timesheets (timesheet_id, employee_project_id, time_type_id, day_of_work, hours_per_day) VALUES (1, 'EP103004', 'REG', DATE '2025-06-05', 4)
+ INTO Timesheets (timesheet_id, employee_project_id, time_type_id, day_of_work, hours_per_day) VALUES (2, 'EP103005', 'REG', DATE '2025-06-05', 4)
+ INTO Timesheets (timesheet_id, employee_project_id, time_type_id, day_of_work, hours_per_day) VALUES (3, 'EP103004', 'REG', DATE '2025-06-06', 4)
+ INTO Timesheets (timesheet_id, employee_project_id, time_type_id, day_of_work, hours_per_day) VALUES (4, 'EP103005', 'REG', DATE '2025-06-06', 4)
+ INTO Timesheets (timesheet_id, employee_project_id, time_type_id, day_of_work, hours_per_day) VALUES (5, 'EP100001', 'REG', DATE '2025-06-06', 8)
+ INTO Timesheets (timesheet_id, employee_project_id, time_type_id, day_of_work, hours_per_day) VALUES (6, 'EP100001', 'OVT', DATE '2025-06-06', 3)
+ INTO Timesheets (timesheet_id, employee_project_id, time_type_id, day_of_work, hours_per_day) VALUES (7, 'EP127008', 'REG', DATE '2025-06-07', 8)
+ INTO Timesheets (timesheet_id, employee_project_id, time_type_id, day_of_work, hours_per_day) VALUES (8, 'EP127008', 'OVT', DATE '2025-06-07', 2)
+
+
+ INTO Timesheets (timesheet_id, employee_project_id, time_type_id, day_of_work, hours_per_day) VALUES (9, 'EP103004', 'REG', DATE '2025-06-07', 4)
+ INTO Timesheets (timesheet_id, employee_project_id, time_type_id, day_of_work, hours_per_day) VALUES (10, 'EP103005', 'REG', DATE '2025-06-07', 4)
+ INTO Timesheets (timesheet_id, employee_project_id, time_type_id, day_of_work, hours_per_day) VALUES (11, 'EP103005', 'OVT', DATE '2025-06-07', 5)
+ INTO Timesheets (timesheet_id, employee_project_id, time_type_id, day_of_work, hours_per_day) VALUES (12, 'EP100001', 'REG', DATE '2025-06-07', 8)
+ INTO Timesheets (timesheet_id, employee_project_id, time_type_id, day_of_work, hours_per_day) VALUES (13, 'EP124005', 'REG', DATE '2025-06-07', 6) 
+ INTO Timesheets (timesheet_id, employee_project_id, time_type_id, day_of_work, hours_per_day) VALUES (14, 'EP127008', 'REG', DATE '2025-06-08', 8)
+ INTO Timesheets (timesheet_id, employee_project_id, time_type_id, day_of_work, hours_per_day) VALUES (15, 'EP127008', 'OVT', DATE '2025-06-08', 3)
+
+
+ INTO Timesheets (timesheet_id, employee_project_id, time_type_id, day_of_work, hours_per_day) VALUES (16, 'EP103004', 'REG', DATE '2025-06-08', 4)
+ INTO Timesheets (timesheet_id, employee_project_id, time_type_id, day_of_work, hours_per_day) VALUES (17, 'EP103005', 'REG', DATE '2025-06-08', 4)
+ INTO Timesheets (timesheet_id, employee_project_id, time_type_id, day_of_work, hours_per_day) VALUES (18, 'EP100001', 'REG', DATE '2025-06-08', 8)
+ INTO Timesheets (timesheet_id, employee_project_id, time_type_id, day_of_work, hours_per_day) VALUES (19, 'EP124005', 'REG', DATE '2025-06-09', 6) 
+ INTO Timesheets (timesheet_id, employee_project_id, time_type_id, day_of_work, hours_per_day) VALUES (20, 'EP127008', 'REG', DATE '2025-06-09', 8)
+SELECT * FROM dual;
+
