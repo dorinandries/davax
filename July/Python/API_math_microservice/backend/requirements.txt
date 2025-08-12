@@ -7,3 +7,5 @@ prometheus-fastapi-instrumentator==7.1.0
 cachetools==6.1.0
 python-dotenv==1.1.1
 kafka-python==2.2.15
+python-jose==3.5.0
+python-dotenv==1.1.1

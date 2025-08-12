@@ -7,6 +7,8 @@ services:
       - "8000:8000"
     environment:
       - DB_PATH=/data/math_results.db
+      - JWT_SECRET=${JWT_SECRET}
+      - JWT_ALGORITHM=${JWT_ALGORITHM}
     volumes:
       - ./backend/math_results.db:/data/math_results.db
 
@@ -16,6 +18,8 @@ services:
     container_name: api_math_microservice_frontend
     ports:
       - "3000:80"
+    environment:
+      - REACT_APP_API_URL=${REACT_APP_API_URL}
     depends_on:
       - backend
 

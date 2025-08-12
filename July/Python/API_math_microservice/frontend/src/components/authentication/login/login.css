@@ -1,0 +1,109 @@
+.login-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.65);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.login-modal-content {
+    background: #23272f;
+    color: #fff;
+    padding: 2.5rem 2rem 2rem 2rem;
+    border-radius: 14px;
+    min-width: 340px;
+    max-width: 95vw;
+    box-shadow: 0 6px 32px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeInScale 0.25s;
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.login-title {
+    margin-bottom: 1.5rem;
+    font-size: 1.7rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.login-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.login-input {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.7rem 1rem;
+    border-radius: 6px;
+    border: none;
+    background: #2e3440;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    transition: background 0.2s;
+}
+
+.login-input:focus {
+    background: #3b4252;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 0.7rem 0;
+    background: linear-gradient(90deg, #4f8cff 0%, #235390 100%);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    transition: background 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(79, 140, 255, 0.08);
+}
+
+.login-btn:hover {
+    background: linear-gradient(90deg, #235390 0%, #4f8cff 100%);
+}
+
+.login-error {
+    color: #ff4d4f;
+    background: #2e1a1a;
+    border-radius: 4px;
+    padding: 0.5rem 0.75rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.97rem;
+    text-align: center;
+}
+
+@media (max-width: 500px) {
+    .login-modal-content {
+        min-width: 90vw;
+        padding: 1.2rem 0.5rem 1.5rem 0.5rem;
+    }
+
+    .login-title {
+        font-size: 1.5rem;
+    }
+}
