@@ -2,9 +2,14 @@ import React, { useState } from "react";
 import { useAuth } from "../../context";
 import "./navbar.css"; // Make sure to import the CSS
 
-const Navbar = ({ onLoginClick }) => {
+const Navbar = ({ onLoginClick, onLogout }) => {
   const { user, logout } = useAuth();
   const [dropdownOpen, setDropdownOpen] = useState(false);
+
+  const handleLogout = () => {
+    logout();
+    if (onLogout) onLogout();
+  };
 
   return (
     <nav className="navbar">
@@ -19,7 +24,7 @@ const Navbar = ({ onLoginClick }) => {
             <span className="navbar-username">{user.username}</span>
             {dropdownOpen && (
               <div className="navbar-dropdown">
-                <button className="navbar-btn" onClick={logout}>
+                <button className="navbar-btn" onClick={handleLogout}>
                   Logout
                 </button>
               </div>

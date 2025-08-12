@@ -10,7 +10,6 @@ export const AuthProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    
     async function fetchData() {
       const jwt = Cookies.get("jwt_token");
       if (jwt) {
@@ -28,10 +27,8 @@ export const AuthProvider = ({ children }) => {
         });
       }
       setLoading(false);
-
     }
     fetchData();
-
   }, []);
 
   const login = async (identifier, password) => {
@@ -48,7 +45,7 @@ export const AuthProvider = ({ children }) => {
         sameSite: "strict",
       });
       const payload = JSON.parse(atob(access_token.split(".")[1]));
-      const get_user = await getUserByID(payload.sub)
+      const get_user = await getUserByID(payload.sub);
       setUser({
         id: get_user.data.id,
         email: get_user.data.email,
