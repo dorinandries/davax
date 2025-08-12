@@ -143,9 +143,9 @@ function App() {
       <Container className="py-5">
         <h1 className="text-center mb-5">Tema Python - Operatii Matematice</h1>
         <Row className="g-4">
-          {cards.map((card) => (
-            <Col md={4} key={card.key}>
-              <Card {...card} />
+          {cards.map(({ key, ...cardProps }) => (
+            <Col md={4} key={key}>
+              <Card {...cardProps} />
             </Col>
           ))}
         </Row>

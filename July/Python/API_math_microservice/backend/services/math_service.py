@@ -1,11 +1,12 @@
 # math_service.py
 from fastapi import HTTPException
-from cachetools import cached, LRUCache
+from cachetools import cached, LRUCache, cachedmethod
 
 # Create a cache with a max size (number of items)
 pow_cache = LRUCache(maxsize=128)
 fibo_cache = LRUCache(maxsize=128)
 fact_cache = LRUCache(maxsize=128)
+prime_cache = LRUCache(maxsize=128)
 
 class MathService:
     @cached(pow_cache)
@@ -32,3 +33,13 @@ class MathService:
         for i in range(2, n + 1):
             result *= i
         return result
+
+    @cachedmethod(lambda self: prime_cache)
+    def is_prime_service(self, n: int) -> dict:
+        """Check if a number is prime and return a response."""
+        if n < 2:
+            return {"operation": "prime", "input": n, "is_prime": False}
+        for i in range(2, int(n**0.5) + 1):
+            if n % i == 0:
+                return {"operation": "prime", "input": n, "is_prime": False}
+        return {"operation": "prime", "input": n, "is_prime": True}

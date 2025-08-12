@@ -182,18 +182,38 @@ async def fact_endpoint(req: FactRequest):
 
 
 @router.post("/prime", response_model=PrimeResponse)
-def check_prime(
+async def check_prime(
     req: PrimeRequest, request: Request, user_id: str = Depends(get_current_user)
 ):
     payload = req.model_dump()
-    logger.info(f"User {user_id} requested method [/prime]")
-    n = req.n
-    if n < 2:
-        return PrimeResponse(operation="prime", input=payload, is_prime=False)
-    for i in range(2, int(n**0.5) + 1):
-        if n % i == 0:
-            return PrimeResponse(operation="prime", input=payload,  is_prime=False)
-    return PrimeResponse(operation="prime", input=payload, is_prime=True)
+    operation = "prime"
+    logger.info(f"User {user_id} requested method [/{operation}]")
+    # Check for existing request in DB
+    existing = db.get_existing_request(operation, payload)
+    if existing is not None:
+        logger.info(f"Prime request for n={req.n} found in DB.")
+        kafka_logger.log({
+            "operation": operation,
+            "input": payload,
+            "result": existing
+        })
+        # Return as PrimeResponse
+        is_prime = existing == "True" or existing is True
+        return PrimeResponse(operation=operation, input=payload, is_prime=is_prime)
+
+    # Compute result
+    result = await asyncio.to_thread(lambda: math_service.is_prime_service(req.n))
+    logger.info(f"Prime request for n={req.n} calculated: {result['is_prime']}")
+    kafka_logger.log({
+        "operation": operation,
+        "input": payload,
+        "result": result["is_prime"]
+    })
+
+    # Save to DB
+    db.save_request(operation, payload, result["is_prime"])
+
+    return PrimeResponse(operation=operation, input=payload, is_prime=result["is_prime"])
 
 
 @router.get("/health")
