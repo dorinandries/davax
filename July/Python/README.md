@@ -7,7 +7,7 @@ This repository contains two distinct Python-based projects:
 ## 1. API Math Microservice
 
 **Summary:**  
-A simple microservice exposing mathematical operations (power, Fibonacci, factorial) via a REST API, built with FastAPI. It features persistent request logging using SQLite and includes both backend and frontend (React) components.
+A simple microservice exposing mathematical operations (power, Fibonacci, factorial, prime number check) via a REST API, built with FastAPI. It features persistent request logging using SQLite and includes both backend and frontend (React) components.
 
 **Key Feature:**  
 The backend caches results of previous computations in a SQLite database, so repeated requests for the same operation and input are served instantly from the database, improving efficiency.

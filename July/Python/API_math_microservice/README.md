@@ -40,7 +40,7 @@ This project is a **production-ready microservice** for mathematical operations,
   - `POST /api/v1/factorial`: Factorial
   - `POST /api/v1/prime`: Prime check (JWT required)
   - `POST /api/v1/login`: User login (JWT)
-  - `POST /api/v1/register`: User registration
+  - `POST /api/v1/register`: User registration + Password encryption in database.
   - `POST /api/v1/user`: Get user info by ID
   - `DELETE /api/v1/user`: Delete user by ID from DB
   - `GET /api/v1/health`: Health check
