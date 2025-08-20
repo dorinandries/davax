@@ -1,0 +1,70 @@
+.message-bubble {
+  max-width: 45%;
+  word-break: break-word;
+  border-radius: 18px;
+  padding: 10px 16px;
+  margin: 6px 0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+  display: flex;
+  align-items: flex-start;
+
+  &.user {
+    align-self: flex-end;
+    margin-left: auto;
+    background: #032a4ed2;
+    color: #cdaaaa;
+    padding: 10px 12px; // padding uniform, fără extra dreapta
+
+    button {
+      color: rgb(255, 255, 255);
+      border: 1px solid rgb(255, 255, 255);
+      border-radius: 10px;
+      font-size: 9px;
+      &:hover {
+        background: rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+
+  &.assistant,
+  &.response {
+    align-self: flex-start;
+    margin-right: auto;
+    background: #e4e6eb;
+    color: #222;
+    padding: 10px 12px;
+
+    button {
+      color: rgb(0, 0, 0);
+      border: 1px solid black;
+      border-radius: 10px;
+      font-size: 9px;
+      &:hover {
+        background: rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+}
+
+.bubble-paper {
+  width: 100%;
+  background: transparent;
+  box-shadow: none;
+  padding: 0;
+  word-break: break-all;
+  overflow-wrap: break-word;
+
+  pre {
+    white-space: pre-wrap;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+    font-family: inherit;
+    margin: 0;
+  }
+}
+
+.bubble-actions {
+  margin-top: 4px;
+  text-align: right;
+}

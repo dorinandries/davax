@@ -1,0 +1,22 @@
+:root {
+  --nav-h: 64px;
+  --footer-h: 48px;
+}
+
+.layout {
+  min-height: 100vh;
+  /* Rezervă spațiu pentru elementele fixe */
+  padding-top: var(--nav-h);
+  padding-bottom: var(--footer-h);
+}
+
+.main-content {
+  min-height: calc(100vh - var(--nav-h) - var(--footer-h));
+  overflow-y: auto;
+  padding: 16px;
+}
+
+/* (opțional) pe mobile MUI AppBar e mai mic: */
+@media (max-width: 600px) {
+  :root { --nav-h: 56px; }
+}
