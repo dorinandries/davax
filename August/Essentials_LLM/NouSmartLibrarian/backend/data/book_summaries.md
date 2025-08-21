@@ -1,119 +1,60 @@
 ## Title: Eragon
-Un băiat de la țară găsește un ou de dragon și pornește într-o călătorie care îi schimbă destinul.
-Descoperă magie, mentorat și o lume sfâșiată de tiranie.
-Relația cu dragonul Saphira îi testează loialitatea și curajul.
+În satul Carvahall, Eragon găsește un ou de dragon care eclozează și îl leagă de Saphira. Îndrumat de Brom, pornește într-o călătorie pentru a înțelege magia, responsabilitatea și tirania regelui Galbatorix. Tragediile personale îi temperează elanul, iar loialitatea față de cei dragi devine busola lui morală. Povestea urmărește transformarea lui din băiat naiv în Călăreț hotărât, pregătit să-și asume riscuri pentru libertate.
 Teme: dragoni, aventură, prietenie, curaj, maturizare
-
 ## Title: The Priory of the Orange Tree
-O fantezie epică despre regate rivale, preotese, cavaleri și dragoni antici.
-Eroine puternice încearcă să prevină reînvierea unui rău străvechi.
-Politică, mituri și iubiri care traversează granițe.
+Un regat condus de o regină fără moștenitor, o preoteasă secretă și cavaleri care privesc cu suspiciune către dragoni: într-o lume fragmentată, renașterea unui vechi rău obligă inamicii să coopereze. Romanul împletește perspective feminine puternice, tradiții rivale despre dragoni și iubiri care înfruntă cutumele. Temele politice și spirituale se întâlnesc într-o cronică despre alegere, credință și solidaritate.
 Teme: dragoni, putere, loialitate, iubire, destin
-
 ## Title: A Game of Thrones
-Case nobiliare se luptă pentru Tronul de Fier, în timp ce o amenințare veche se trezește la nord.
-Intrigi, trădări și alianțe fragile definesc supraviețuirea.
-Departe, urmele dragonilor reapar în lume.
+Pe continentul Westeros, casele nobiliare țes intrigi pentru a controla Tronul de Fier, în timp ce iarna se apropie și pericolele din Nord cresc. La răsărit, urmașii unei dinastii căzute caută să revină în forță, reaprinzând legenda dragonilor. Povestea explorează ambiția, trădarea și fragilitatea alianțelor, arătând costurile umane ale puterii.
 Teme: dragoni, putere, război, familie, supraviețuire
-
 ## Title: The Name of the Wind
-Povestea lui Kvothe, un tânăr genial care își caută locul într-o lume cu magie, muzică și mistere.
-De la copilărie marcată de pierderi la anii de ucenicie, povestea e despre cunoaștere și identitate.
-Un mit în devenire, spus cu lirism.
+Kvothe își narează viața: copil actor, orfan, student la Universitate, muzician și viitor arcanist. Dorința de cunoaștere și dorul de adevăr despre misterioșii Chandrian îl împing să încalce reguli și să riște totul. Romanul alternează lirismul cu detaliile lumii magice, punând accent pe identitate și prețul ambiției.
 Teme: adolescenți, magie, identitate, ambiție, cunoaștere
-
 ## Title: The Fault in Our Stars
-Doi adolescenți se îndrăgostesc în timp ce se confruntă cu boala și finitudinea.
-Dragostea lor înfruntă frica, furia și speranța în doze egale.
-O poveste tandră despre sens și efemer.
+Hazel și Gus, doi adolescenți cu diagnostice grele, se îndrăgostesc și pornesc într-o căutare a sensului, a adevărului și a unei întâlniri cu autorul preferat. Umorul negru, tandrețea și durerea se combină într-o poveste despre felul în care iubirea poate face suportabilă incertitudinea. O meditație emoționantă asupra efemerului.
 Teme: iubire, adolescenți, boală, speranță, viață
-
 ## Title: Pride and Prejudice
-Elizabeth Bennet și Mr. Darcy se ciocnesc între spirit, mândrie și norme sociale.
-O satiră fină a claselor și a prejudecăților, cu o poveste de iubire memorabilă.
-Alegerea de sine devine cheia fericirii.
+Elizabeth Bennet înfruntă convențiile sociale și prejudecățile personale în drumul spre iubire și autonomie. Dincolo de replicile spumoase și momentele romantice, romanul este o critică fină la adresa claselor și a așteptărilor de gen. Transformarea personajelor trece prin onestitate, auto-reflecție și curajul de a alege.
 Teme: iubire, societate, familie, prejudecăți, alegeri
-
 ## Title: The Great Gatsby
-Visul american prins în sclipici și minciuni.
-Gatsby își construiește o identitate falsă pentru a recuceri o iubire veche.
-Strălucirea ascunde golul moral.
+Nick Carraway devine martor la ascensiunea și prăbușirea lui Jay Gatsby, un magnat misterios obsedat de trecut. Fastul petrecerilor ascunde corupție, minciună și o iubire proiectată pe o fantasmă. Romanul deconstruiește visul american prin tema falsității și a identității create.
 Teme: falsitate, iluzie, iubire, bogăție, identitate
-
 ## Title: The Picture of Dorian Gray
-Un tânăr păstrează tinerețea la exterior, în timp ce portretul său îmbătrânește cu păcatele lui.
-Vanitatea și hedonismul îl prăbușesc.
-O meditație despre moralitate și mască.
+Dorian își vinde, metaforic, sufletul pentru a rămâne veșnic tânăr; păcatele lui se imprimă pe portretul din mansardă. Influența cinică a lui Lord Henry și dorința de plăcere fără consecințe declanșează un drum al degradării. Finalul demască prețul vanității și al vieții trăite ca spectacol.
 Teme: falsitate, vanitate, moralitate, identitate, corupție
-
 ## Title: Man’s Search for Meaning
-Un supraviețuitor al lagărelor naziste explorează cum sensul dă putere de a trăi.
-Logoterapia ca practică a alegerii interioare.
-O carte despre suferință, demnitate și sens.
+Viktor Frankl povestește experiența sa din lagărele de concentrare și introduce logoterapia: sensul ca motor al rezilienței. Individul poate alege atitudinea chiar și în condiții-limită. Cartea îmbină relatarea istorică cu o filozofie practică despre responsabilitate, libertate interioară și demnitate.
 Teme: viață, sens, reziliență, libertate interioară, psihologie
-
 ## Title: The Alchemist
-Un păstor pornește în căutarea comorii și ajunge să se găsească pe sine.
-Semne, vise și întâlniri îl ghidează.
-O fabulă despre destin și ascultarea inimii.
+Santiago își urmărește „Legenda Personală” din Andaluzia până în deșert. Întâlniri semnificative și semne misterioase îl învață să distingă între dorințe superficiale și chemarea autentică. Povestea funcționează ca o parabolă despre curaj, intuiție și sincronicități.
 Teme: viață, destin, călătorie, spiritualitate, vis
-
 ## Title: Braiding Sweetgrass
-Știință laolaltă cu înțelepciunea indigenă despre relația om-natură.
-Recunoștință, reciprocitate și grijă pentru pământ.
-Eseuri poetice despre refacerea legăturilor.
+Robin Wall Kimmerer combină botanică și tradiții indigene pentru a repara relația om-natură. Eseurile arată cum recunoștința și reciprocitatea pot reorienta știința spre grijă și responsabilitate. O carte poetică despre a învăța să aparții locului.
 Teme: natură, ecologie, comunitate, recunoștință, etică
-
 ## Title: Walden
-Un experiment de simplitate lângă lac.
-Observații despre natură, muncă, libertate și timp.
-Un manifest pentru viață deliberată.
+Thoreau își cronichează viața simplă de la marginea lacului: muncă, contemplație, observarea naturii. Critică graba societății și propune o existență deliberată, în contact cu sine și cu mediul. Un text fondator pentru minimalism și ecologie personală.
 Teme: natură, simplitate, libertate, introspecție, viață
-
 ## Title: Into the Wild
-Un tânăr renunță la confort și pornește singur spre Alaska.
-Caută autenticitate, dar se lovește de limitele naturii și ale propriei naivități.
-O poveste despre risc și sens.
+Christopher McCandless își abandonează confortul pentru o viață „autentică”. Pelerinajul lui spre Alaska dezvăluie idealism, curaj, dar și inconștiență. Cartea pune întrebări despre libertate, responsabilitate și costurile singurătății.
 Teme: natură, libertate, adolescenți, căutare, viață
-
 ## Title: Dune
-Politică interstelară, ecologie și profeție pe o planetă-deșert.
-Un tânăr moștenitor devine lider al unei lumi ostile.
-Puterea are un preț, iar natura cere respect.
+Casa Atreides preia controlul asupra Arrakis, sursa mirodeniei care guvernează economia și navigația spațială. Paul, moștenitorul, devine figura unui destin profetic ancorat în ecologia deșertului. Romanul combină politică, religie și mediu într-o epopee despre putere și consecințe.
 Teme: natură, putere, destin, ecologie, misticism
-
 ## Title: Circe
-Vrăjitoarea din mitologia greacă își spune propria poveste.
-Exilul devine spațiu de putere, vindecare și alegere.
-Iubirea și libertatea se redefinesc.
+Fiica lui Helios, exilată pe o insulă, transformă durerea în putere. Întâlnirile cu eroii greci (Odiseu, Medea) sunt reinterpretate dintr-o perspectivă feminină. Alegerea de sine și redefinirea iubirii structurează parcursul ei.
 Teme: iubire, identitate, mit, putere, viață
-
 ## Title: Little Women
-Patru surori cresc între vise, lipsuri și solidaritate.
-Drumul spre maturitate este diferit pentru fiecare.
-Familia devine ancora prin schimbare.
+Meg, Jo, Bet și Amy se maturizează prin muncă, artă, boală și iubire. Romanul celebrează solidaritatea familială, dar și individualitatea fiecăreia. Drumul fiecărei surori reflectă compromisuri și aspirații realiste.
 Teme: familie, adolescenți, iubire, ambiție, maturizare
-
 ## Title: Educated
-Crescută într-o familie izolată, autoarea evadează prin educație.
-Își reconstruiește identitatea între loialitate și autonomie.
-Un memoir despre cunoaștere ca libertate.
+Tara Westover, crescută într-o familie mormonă radicală, fără educație formală, ajunge la universități de top. Procesul o rupe de loialitățile vechi, dar îi oferă o identitate nouă. O poveste despre puterea învățării și vindecării.
 Teme: viață, educație, familie, identitate, reziliență
-
 ## Title: Shoe Dog
-Memoriile fondatorului Nike: eșecuri, intuiții și încăpățânare.
-Cultura, echipa și cashflow-ul fac diferența.
-O privire sinceră în culisele antreprenoriatului.
+Phil Knight povestește haosul primilor ani Nike: furnizori, cashflow, cultură, eșecuri repetate. Reușita vine din obsesie, echipă și asumarea riscului. O privire onestă în viața unui fondator.
 Teme: antreprenoriat, viață, leadership, risc, perseverență
-
 ## Title: The Lean Startup
-Cum să construiești produse prin experimentare rapidă și feedback.
-Metrice acționabile, pivot sau perseverează.
-Un cadru pentru a reduce risipa și a crește învățarea.
+Eric Ries propune un cadru pentru a învăța repede ce vor clienții: MVP, experimentare, metrice acționabile. „Pivot or persevere” devine decizia centrală. Cartea redefinește execuția în condiții de incertitudine.
 Teme: antreprenoriat, inovație, iterație, produs, date
-
 ## Title: Zero to One
-Construiește companii care creează valoare unică, nu doar competiție.
-Monopolul ca rezultat al inovației radicale.
-Gândește de la primul principiu.
+Peter Thiel argumentează pentru crearea de monopoluri bazate pe tehnologie unică. Gândirea de la primul principiu și contrarianismul sunt instrumente-cheie. Scopul: companii care aduc ceva cu adevărat nou în lume.
 Teme: antreprenoriat, strategie, inovație, viitor, valoare

@@ -1,0 +1,102 @@
+{
+  "Eragon": {
+    "author": "Christopher Paolini",
+    "year": 2003,
+    "pages": 544
+  },
+  "The Priory of the Orange Tree": {
+    "author": "Samantha Shannon",
+    "year": 2019,
+    "pages": 848
+  },
+  "A Game of Thrones": {
+    "author": "George R. R. Martin",
+    "year": 1996,
+    "pages": 694
+  },
+  "The Name of the Wind": {
+    "author": "Patrick Rothfuss",
+    "year": 2007,
+    "pages": 662
+  },
+  "The Fault in Our Stars": {
+    "author": "John Green",
+    "year": 2012,
+    "pages": 313
+  },
+  "Pride and Prejudice": {
+    "author": "Jane Austen",
+    "year": 1813,
+    "pages": 352
+  },
+  "The Great Gatsby": {
+    "author": "F. Scott Fitzgerald",
+    "year": 1925,
+    "pages": 180
+  },
+  "The Picture of Dorian Gray": {
+    "author": "Oscar Wilde",
+    "year": 1891,
+    "pages": 254
+  },
+  "Man’s Search for Meaning": {
+    "author": "Viktor E. Frankl",
+    "year": 1946,
+    "pages": 200
+  },
+  "The Alchemist": {
+    "author": "Paulo Coelho",
+    "year": 1988,
+    "pages": 208
+  },
+  "Braiding Sweetgrass": {
+    "author": "Robin Wall Kimmerer",
+    "year": 2013,
+    "pages": 390
+  },
+  "Walden": {
+    "author": "Henry David Thoreau",
+    "year": 1854,
+    "pages": 224
+  },
+  "Into the Wild": {
+    "author": "Jon Krakauer",
+    "year": 1996,
+    "pages": 207
+  },
+  "Dune": {
+    "author": "Frank Herbert",
+    "year": 1965,
+    "pages": 688
+  },
+  "Circe": {
+    "author": "Madeline Miller",
+    "year": 2018,
+    "pages": 393
+  },
+  "Little Women": {
+    "author": "Louisa May Alcott",
+    "year": 1868,
+    "pages": 528
+  },
+  "Educated": {
+    "author": "Tara Westover",
+    "year": 2018,
+    "pages": 334
+  },
+  "Shoe Dog": {
+    "author": "Phil Knight",
+    "year": 2016,
+    "pages": 400
+  },
+  "The Lean Startup": {
+    "author": "Eric Ries",
+    "year": 2011,
+    "pages": 336
+  },
+  "Zero to One": {
+    "author": "Peter Thiel; Blake Masters",
+    "year": 2014,
+    "pages": 224
+  }
+}
