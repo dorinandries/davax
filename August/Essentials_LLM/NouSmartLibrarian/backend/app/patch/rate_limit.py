@@ -1,8 +1,8 @@
 from redis import Redis, exceptions
-from .config import settings
+from ..config import settings
 
 ANON_USED = "anon:used:{sid}"
-ANON_LIMIT = 300
+ANON_LIMIT = 3
 ANON_TTL = 86400  # 24h
 
 try:
