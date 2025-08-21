@@ -27,3 +27,6 @@ This repository contains all the projects I've developed during my **3-month tra
   🧠 Machine Learning Basics → 🤖 Generative AI → ☁️ MLOps \& Cloud Applications → 🏆 Kaggle Competition *(38th place / 307 entries)*
 
 
+### August – AI Book Recommendation Platform: Smart Librarian
+
+* 📚 Developed **Smart Librarian Chatbot**, a full-stack AI-powered book recommendation platform which combines FastAPI,Redis, SQLite3, Chroma, and OpenAI for backend intelligence.
