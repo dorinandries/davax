@@ -1,6 +1,6 @@
-# 📚 NouSmartLibrarian – AI Book Recommendation Platform
+# 📚 Smart Librarian – AI Book Recommendation Platform
 
-NouSmartLibrarian este o aplicație full-stack care folosește inteligența artificială pentru a recomanda cărți, oferind rezumate detaliate, teme și gestionarea preferințelor utilizatorilor. Platforma combină un backend rapid (FastAPI + Chroma + OpenAI) cu un frontend modern (React + Vite + Material UI).
+Smart Librarian este o aplicație full-stack care folosește inteligența artificială pentru a recomanda cărți, oferind rezumate detaliate, teme și gestionarea preferințelor utilizatorilor. Platforma combină un backend rapid (FastAPI + Chroma + OpenAI) cu un frontend modern (React + Vite + Material UI).
 
 ---
 
@@ -23,8 +23,9 @@ NouSmartLibrarian este o aplicație full-stack care folosește inteligența arti
 ### 1. Clonare proiect
 
 ```sh
-git clone https://github.com/username/NouSmartLibrarian.git
-cd NouSmartLibrarian
+git clone --depth 1 --filter=blob:none --sparse https://github.com/dorinandries/davax.git
+git sparse-checkout set August/Essentials_LLM/NouSmartLibrarian
+cd August/Essentials_LLM/NouSmartLibrarian
 ```
 
 ### 2. Backend
@@ -90,13 +91,7 @@ PRICE_EMBEDDING=0.00002
 docker run -p 6379:6379 redis:7-alpine
 ```
 
-#### 5. Rulează backend-ul
-
-```sh
-uvicorn app.main:app --reload
-```
-
-#### 6. Populează baza de date cu rezumate
+#### 5. Populează baza de date cu rezumate
 
 La primul apel către `/chat/recommend` se creează colecția Chroma. Pentru populare masivă, rulează în consola proiectului:
 
@@ -104,6 +99,12 @@ La primul apel către `/chat/recommend` se creează colecția Chroma. Pentru pop
 python app/seed_chroma.py
 ```
 
+
+#### 6. Rulează backend-ul
+
+```sh
+uvicorn app.main:app --reload
+```
 ---
 
 ### 7. Frontend
