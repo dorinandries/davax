@@ -24,9 +24,10 @@ This repository contains all the projects I've developed during my **3-month tra
 * 🔐 Python Homework: API to solve different mathematical operations
 * 🧩 AI mentor assistant - Personal project using OpenAI API, Python API integration, React.js Vite + ThreeJS
 * 📊 Data Science \& AI trainings:
-  🧠 Machine Learning Basics → 🤖 Generative AI → ☁️ MLOps \& Cloud Applications → 🏆 Kaggle Competition *(38th place / 307 entries)*
+  🧠 Machine Learning Basics → 🤖 Generative AI → ☁️ MLOps \& Cloud Applications → 🏆 Kaggle Competition *[https://www.kaggle.com/competitions/identify-the-author/leaderboard#:~:text=3-,Andrei%20Andrie%C8%99,-0.18973]((38th place / 307 entries))*
 
 
 ### August – AI Book Recommendation Platform: Smart Librarian
 
 * 📚 Developed **Smart Librarian Chatbot**, a full-stack AI-powered book recommendation platform which combines FastAPI,Redis, SQLite3, Chroma, and OpenAI for backend intelligence.
+* 🐳 Docker & Kubernets application - This project is a proof of concept flask web app with Docker and Kubernetes manifests. 
